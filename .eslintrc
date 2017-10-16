@@ -1,0 +1,31 @@
+{
+    "plugins": [
+        "react",
+        "chai-friendly"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6":     true,
+        "browser": true,
+        "node":    true,
+        "mocha":   true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+      "no-undef": 0,
+      "no-unused-expressions": 0,
+      "chai-friendly/no-unused-expressions": 2,
+      "no-console": 1,
+      "no-debugger": 1,
+      "no-alert": 1
+    }
+}

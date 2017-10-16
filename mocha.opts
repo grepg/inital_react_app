@@ -1,0 +1,3 @@
+src/app/test/*.spec.js
+--watch
+--require test.helpers.js

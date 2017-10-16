@@ -1,0 +1,44 @@
+{
+  "name": "agile-sessions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts mocha.opts --watch --compilers babel-core/register",
+    "dev": "webpack-dev-server --content-base=src/public --port 4000 --host 0.0.0.0",
+    "build": "webpack",
+    "lint": "esw webpack.config.* src/app/* --color",
+    "lint:watch": "npm run lint -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^2.13.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "http-server": "^0.10.0",
+    "less": "^3.0.0-alpha.3",
+    "less-loader": "^4.0.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.74.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-chai-friendly": "^0.4.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-watch": "^3.1.2",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.1"
+  }
+}
